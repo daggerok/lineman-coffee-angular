@@ -1,9 +1,8 @@
 lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coffee-angular.svg?branch=master)](https://api.travis-ci.org/daggerok/lineman-coffee-angular.svg?branch=master)
 ======================
-
-web frameworks: linamen, angular
-testing: jasmine angulat-mocks
-lang: coffee
+- web frameworks: linamen, angular
+- testing: jasmine angulat-mocks
+- lang: coffee
 
 ### npm log
 
