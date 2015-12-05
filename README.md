@@ -50,24 +50,24 @@ lang: coffee
     
 6 update config/files.coffe and replace {} with
 
-    ``` coffee
-    #Override file patterns here
-    js: 
-      vendor: [
-        "vendor/js/jquery.js"
-        "vendor/js/bootstrap.js"
-        "vendor/js/angular.js"
-      ]
-    , css:
-      vendor: [
-        "vendor/css/bootstrap.css"
-      ]
-    , coffee:
-      app: [
-        "app/js/application.coffee"
-        "app/js/**/*.coffee"
-      ]
-    ```
+  ``` coffee
+  #Override file patterns here
+  js: 
+    vendor: [
+      "vendor/js/jquery.js"
+      "vendor/js/bootstrap.js"
+      "vendor/js/angular.js"
+    ]
+  , css:
+    vendor: [
+      "vendor/css/bootstrap.css"
+    ]
+  , coffee:
+    app: [
+      "app/js/application.coffee"
+      "app/js/**/*.coffee"
+    ]
+  ```
 7 build or run application
     
     $ npm run build
