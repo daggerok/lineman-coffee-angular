@@ -68,7 +68,6 @@ lang: coffee
         "app/js/**/*.coffee"
       ]
     ```
-    
 7 build or run application
     
     $ npm run build
