@@ -1,5 +1,9 @@
-lineman-coffee-angular
+lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coffee-angular.svg?branch=master)](https://api.travis-ci.org/daggerok/lineman-coffee-angular.svg?branch=master)
 ======================
+
+web frameworks: linamen, angular
+testing: jasmine angulat-mocks
+lang: coffee
 
 1 lineman install
     $ npm init
