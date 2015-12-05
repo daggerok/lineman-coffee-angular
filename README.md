@@ -31,9 +31,8 @@ lang: coffee
         
         $ cp node_modules/bootstrap/dist/css/bootstrap.css vendor/css/
         $ cp node_modules/bootstrap/dist/css/bootstrap.css.map vendor/css/
-        $ mkdir vendor/css/less
+        $ mkdir -p vendor/css/less/mixins
         $ cp node_modules/bootstrap/less/*.less vendor/css/less/
-        $ mkdir vendor/css/less/mixins
         $ cp node_modules/bootstrap/less/mixins/*.less vendor/css/less/mixins/
 
 - test js

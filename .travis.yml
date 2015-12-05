@@ -1,6 +1,20 @@
+
+sudo: false
 language: node_js
-node_js: 
-  - 5.1
+node_js:
+ - 5.1
+cache:
+  directories:
+    - node_modules
 script:
+  - mkdir -p vendor/css/less/mixins
+  - cp node_modules/bootstrap/less/*.less vendor/css/less/
+  - cp node_modules/bootstrap/less/mixins/*.less vendor/css/less/mixins/
   - "lineman clean build"
   - "lineman spec-ci"
+notifications:
+  email:
+    recipients:
+      - daggerok@gmail.com
+    on_failure: change # always
+    on_success: never
