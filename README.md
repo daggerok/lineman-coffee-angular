@@ -5,7 +5,10 @@ web frameworks: linamen, angular
 testing: jasmine angulat-mocks
 lang: coffee
 
+### npm log
+
 1 lineman install
+    
     $ npm init
     ...
     $ npm i lineman
@@ -15,10 +18,12 @@ lang: coffee
 2 update nodejs information
     
     $ vim package.json
+    
 3 install needed modules with save dev
     
     $ npm i -S angular
     $ npm i -D angular-mocks phantomjs bootstrap jquery
+    
 4 copy all used vendors
 
 - js
@@ -38,9 +43,11 @@ lang: coffee
 - test js
         
         $ cp node_modules/angular-mocks/angular-mocks.js spec/helpers/
+        
 5 remove hello examples
     
     $ rm -rf app/js/hello.coffee app/templates/hello.us spec/hello-spec.coffee
+    
 6 update config/files.coffe and replace {} with
 
     ``` coffee
@@ -61,14 +68,18 @@ lang: coffee
         "app/js/**/*.coffee"
       ]
     ```
+    
 7 build or run application
     
     $ npm run build
     $ npm run start
     $ npm run production
 8 add application.coffee with angluar.module declaration
+
 9 update app/pages/index.us: add ng-app directives, favicon
+
 10 add angular controller and spec for it
+
 11 run test or use TDD command
     
     $ npm run test
