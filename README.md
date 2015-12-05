@@ -99,10 +99,13 @@ lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coff
     res.json name: "Max"
   ```
 13 verify proxy api
-run in dev mode and check hi, Max! on left top side of page
 
+run in dev mode and check hi, Max! on left top side of page
+    
     $ npm run start 
 
 run in prodution8000 mode and verify hi, undefined!
+    
+    $ npm run production8000
 
 (:
