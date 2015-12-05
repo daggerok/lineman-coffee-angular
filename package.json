@@ -1,0 +1,27 @@
+{
+  "name": "lineman-coffee-angular",
+  "description": "An HTML/JS/CSS Lineman AngularJS application on CoffeeScript",
+  "version": "1.0.0",
+  "private": false,
+  "author": "Maksim Kostromin",
+  "devDependencies": {
+    "angular-mocks": "^1.4.8",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.1.4",
+    "lineman": "~0.36.6",
+    "phantomjs": "^1.9.19"
+  },
+  "scripts": {
+    "clean": "lineman clean",
+    "build": "lineman clean build",
+    "start": "lineman run",
+    "tdd": "lineman spec",
+    "test": "lineman spec-ci",
+    "production": "lineman clean build && npm i express@3 && node -e \"var port = 8000; var e = require('express'), a = e(); a.use(e.static('dist/')); console.log('listening port: ' + port); a.listen(port)\"",
+    "production-env-port": "lineman clean build && npm i express@3 && node -e \"var e = require('express'), a = e(); a.use(e.static('dist/')); a.listen(process.env.PORT)\""
+
+  },
+  "dependencies": {
+    "angular": "^1.4.8"
+  }
+}
