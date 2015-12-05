@@ -12,7 +12,7 @@ lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coff
     ...
     $ npm i lineman
     $ node_modules/.bin/lineman new --coffee --skip-examples --install lineman-coffee-angular
-    $ cd lineman-coffee-angular
+    $ cd lineman-coffee-angular/
 
 2 update nodejs information
     
@@ -67,7 +67,7 @@ lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coff
     
     $ npm run build
     $ npm run start
-    $ npm run production
+    $ npm run production8080
 7 add application.coffee with angluar.module declaration
 
 8 update app/pages/index.us: add ng-app directives, favicon
