@@ -13,6 +13,5 @@
 # 
 module.exports = drawRoutes: (app) ->
 
-# app.get('/api/greeting/:message', function(req, res){
-#   res.json({ message: "OK, "+req.params.message });
-# });
+  app.get '/api/name', (req, res) ->
+    res.json name: "Max"

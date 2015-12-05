@@ -68,7 +68,7 @@ lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coff
     $ npm run build
     $ npm run start
     $ npm run production8080
-7 add application.coffee with angluar.module declaration
+7 add app/js/application.coffee with angluar.module declaration
 
 8 update app/pages/index.us: add ng-app directives, favicon
 
@@ -78,3 +78,24 @@ lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coff
     
     $ npm run test
     $ npm run tdd
+
+11 tunr on proxy sserver in config/application.coffee
+  
+  ``` coffee
+  server: {
+    apiProxy: {
+      enabled: true,
+      host: 'localhost',
+      port: 3000
+      profix: '/api'
+    }
+  }
+  ```
+
+12 configure proxy api in config/server.coffee
+  
+  ``` coffee
+  app.get '/api/name', (req, res) ->
+    res.json name: "Max"
+  ```
+13 verify Max on left top side of page 
