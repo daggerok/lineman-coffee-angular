@@ -11,7 +11,7 @@ lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coff
     $ npm init
     ...
     $ npm i lineman
-    $ node_modules/.bin/lineman new --coffee --install lineman-coffee-angular
+    $ node_modules/.bin/lineman new --coffee --skip-examples --install lineman-coffee-angular
     $ cd lineman-coffee-angular
 
 2 update nodejs information
@@ -43,11 +43,7 @@ lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coff
         
         $ cp node_modules/angular-mocks/angular-mocks.js spec/helpers/
         
-5 remove hello examples
-    
-    $ rm -rf app/js/hello.coffee app/templates/hello.us spec/hello-spec.coffee
-    
-6 update config/files.coffe and replace {} with
+5 update config/files.coffe and replace {} with
 
   ``` coffee
   #Override file patterns here
@@ -67,18 +63,18 @@ lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coff
       "app/js/**/*.coffee"
     ]
   ```
-7 build or run application
+6 build or run application
     
     $ npm run build
     $ npm run start
     $ npm run production
-8 add application.coffee with angluar.module declaration
+7 add application.coffee with angluar.module declaration
 
-9 update app/pages/index.us: add ng-app directives, favicon
+8 update app/pages/index.us: add ng-app directives, favicon
 
-10 add angular controller and spec for it
+9 add angular controller and spec for it
 
-11 run test or use TDD command
+10 run test or use TDD command
     
     $ npm run test
     $ npm run tdd
