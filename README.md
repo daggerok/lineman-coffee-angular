@@ -67,7 +67,7 @@ lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coff
     
     $ npm run build
     $ npm run start
-    $ npm run production8080
+    $ npm run production8000
 7 add app/js/application.coffee with angluar.module declaration
 
 8 update app/pages/index.us: add ng-app directives, favicon
@@ -98,4 +98,11 @@ lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coff
   app.get '/api/name', (req, res) ->
     res.json name: "Max"
   ```
-13 verify Max on left top side of page 
+13 verify proxy api
+run in dev mode and check hi, Max! on left top side of page
+
+    $ npm run start 
+
+run in prodution8000 mode and verify hi, undefined!
+
+(:
