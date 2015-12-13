@@ -1,4 +1,4 @@
-angular.module('LinemanController', [])
+angular.module('LinamenController', [])
   .controller 'LinemanController', [
     '$scope', ($scope) ->
       $scope.greeting = (name = $scope.LinemanModel) ->

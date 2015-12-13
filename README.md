@@ -102,7 +102,7 @@ lineman-coffee-angular [![build](https://api.travis-ci.org/daggerok/lineman-coff
 
 run in dev mode and check hi, Max! on left top side of page
     
-    $ npm run start 
+    $ npm start 
 
 run in prodution8000 mode and verify hi, undefined!
     

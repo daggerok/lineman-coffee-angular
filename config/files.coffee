@@ -20,7 +20,6 @@ module.exports = (lineman) ->
     ]
   , coffee:
     app: [
-      "app/js/application.coffee"
       "app/js/**/*.coffee"
     ]
 

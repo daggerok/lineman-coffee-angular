@@ -1,13 +1,16 @@
-describe 'HttpProxyController', ->
+describe 'controllers', ->
 
-  beforeEach -> module 'HttpProxyController'
+  describe 'HttpProxyController', ->
 
-  beforeEach inject ($controller, $rootScope) ->
-    @scope = $rootScope.$new()
-    @HttpProxyController = $controller 'HttpProxyController',
-        $scope: @scope
+    beforeEach -> module 'controllers'
 
-  describe 'getMax without proxi API', ->
+    beforeEach inject ($controller, $rootScope) ->
+      @scope = $rootScope.$new()
+      @HttpProxyController = $controller 'HttpProxyController',
+          $scope: @scope
 
-    it 'should return "hi, undefined!"', ->
-      expect(@scope.hiMax()).toEqual('hi, undefined!')
+    describe 'getMax without proxi API', ->
+
+      it 'should return "hi, undefined!"', ->
+        expect(@scope.hiMax())
+          .toEqual 'hi, undefined!'

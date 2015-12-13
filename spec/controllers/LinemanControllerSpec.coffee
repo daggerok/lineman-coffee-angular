@@ -1,18 +1,22 @@
-describe 'LinemanController', ->
+describe 'controllers', ->
 
-  beforeEach -> module 'LinemanController'
+  describe 'LinemanController', ->
 
-  beforeEach inject ($controller, $rootScope) ->
-    @scope = $rootScope.$new()
-    @scope.LinemanModel = 'World'
-    @LinemanController = $controller 'LinemanController', $scope: @scope
+    beforeEach -> module 'controllers'
 
-  describe 'greeting default', ->
+    beforeEach inject ($controller, $rootScope) ->
+      @scope = $rootScope.$new()
+      @scope.LinemanModel = 'World'
+      @LinemanController = $controller 'LinemanController', $scope: @scope
 
-    it 'should says "Hello, World!"', ->
-      expect(@scope.greeting()).toEqual('Hello, World!')
+    describe 'greeting default', ->
 
-  describe 'greeting by argument param', ->
+      it 'should says "Hello, World!"', ->
+        expect(@scope.greeting())
+          .toEqual 'Hello, World!'
 
-    it 'should says "Hello, Max!"', ->
-      expect(@scope.greeting('Max')).toEqual('Hello, Max!')
+    describe 'greeting by argument param', ->
+
+      it 'should says "Hello, Max!"', ->
+        expect(@scope.greeting 'Max')
+          .toEqual 'Hello, Max!'
