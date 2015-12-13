@@ -11,11 +11,8 @@ script:
   - mkdir -p vendor/css/less/mixins
   - cp node_modules/bootstrap/less/*.less vendor/css/less/
   - cp node_modules/bootstrap/less/mixins/*.less vendor/css/less/mixins/
-  - "lineman clean build"
-  - "lineman spec-ci"
+  - npm run build
+  - npm test
 notifications:
-  email:
-    recipients:
-      - daggerok@gmail.com
-    on_failure: change # always
-    on_success: never
+  on_failure: change # always|change|never
+  on_success: change
